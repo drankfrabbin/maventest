@@ -2,7 +2,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.bandwidth.frank</groupId>
    <artifactId>frankparent</artifactId>
-   <version>enya-SNAPSHOT</version>
+   <version>enya</version>
    <packaging>pom</packaging>
 
    <modules>
@@ -24,7 +24,8 @@
       <url>https://${scm.repo.host}/${scm.repo.account}/${scm.repo.name}</url>
       <connection>${scm.connection}</connection>
       <developerConnection>${scm.connection}</developerConnection>
-   </scm>
+     <tag>frankparent-enya</tag>
+  </scm>
 
    <dependencyManagement>
       <dependencies>
