@@ -2,7 +2,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.bandwidth.frank</groupId>
    <artifactId>frankparent</artifactId>
-   <version>enya</version>
+   <version>enya-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <modules>
@@ -22,8 +22,7 @@
       <url>https://${scm.repo.url}/iris.git</url>
       <connection>scm:git:ssh://git@${scm.repo.url}/${scm.repo.name}.git</connection>
       <developerConnection>scm:git:ssh://git@${scm.repo.url}/${scm.repo.name}.git</developerConnection>
-     <tag>frankparent-enya</tag>
-  </scm>
+   </scm>
 
    <dependencyManagement>
       <dependencies>
