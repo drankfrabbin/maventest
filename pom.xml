@@ -12,16 +12,18 @@
    <properties>
       <java.version>1.7</java.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <scm.repo.url>github.org/drankfrabbin</scm.repo.url>
+      <scm.repo.host>github.com</scm.repo.host>
+      <scm.repo.user>drankfrabbin</scm.repo.user>
       <scm.repo.name>maventest</scm.repo.name>
+      <scm.connection>scm:git:ssh://git@${scm.repo.host}:${scm.repo.user}/${scm.repo.name}.git</scm.connection>
       <spring-framework.version>4.0.3.RELEASE</spring-framework.version>
       <spring-boot.version>1.0.2.RELEASE</spring-boot.version>
    </properties>
 
    <scm>
-      <url>https://${scm.repo.url}/iris.git</url>
-      <connection>scm:git:ssh://git@${scm.repo.url}/${scm.repo.name}.git</connection>
-      <developerConnection>scm:git:ssh://git@${scm.repo.url}/${scm.repo.name}.git</developerConnection>
+      <url>https://${scm.repo.host}/${scm.repo.user}/${scm.repo.name}.git</url>
+      <connection>${scm.connection}</connection>
+      <developerConnection>${scm.connection}</developerConnection>
    </scm>
 
    <dependencyManagement>
