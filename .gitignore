@@ -1,0 +1,51 @@
+# Ignore emacs temporary files
+\#*
+.\#*
+
+# vi temp files
+*~
+*.swp
+# Mergetool files
+*.orig
+
+# Ignore intellij files
+.idea
+*.iml
+*.ipr
+*.iws
+*.ids
+
+# Generated files/directories
+target/
+build/
+bin/
+logs/
+*.class
+dependency-reduced-pom.xml
+junit*.properties
+
+# Ignore TestNG output
+test-output
+
+# Ignore sublime text workspace files
+*.sublime-*
+
+# Ignore netbeans
+nb-*
+
+# Apple directory artifacts
+.DS_Store
+
+.metadata/
+
+# Ignore Eclipse files
+*.classpath
+*.prefs
+*.project 
+.project
+.gitk
+.settings/
+.externalToolBuilders/
+
+# Ignore .cache file generated with httplib2
+.cache

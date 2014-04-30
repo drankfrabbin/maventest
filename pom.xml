@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.bandwidth.frank</groupId>
+   <artifactId>frankparent</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
+   <packaging>pom</packaging>
+
+   <modules>
+      <module>frankweb</module>
+   </modules>
+
+   <properties>
+      <java.version>1.7</java.version>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <git.repo.url>github.org/drankfrabbin</git.repo.url>
+      <git.repo.name>maventest</git.repo.name>
+      <spring-framework.version>4.0.3.RELEASE</spring-framework.version>
+      <spring-boot.version>1.0.2.RELEASE</spring-boot.version>
+   </properties>
+
+   <scm>
+      <url>https://${git.repo.url}/iris.git</url>
+      <connection>scm:git:ssh://git@${git.repo.url}/${git.repo.name}.git</connection>
+      <developerConnection>scm:git:ssh://git@${git.repo.url}/${git.repo.name}.git</developerConnection>
+   </scm>
+
+   <dependencyManagement>
+      <dependencies>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-framework-bom</artifactId>
+            <version>${spring-framework.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>${spring-boot.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+   <build>
+      <plugins>
+
+      </plugins>
+      <pluginManagement>
+         <plugins>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>3.1</version>
+               <configuration>
+                  <optimize>true</optimize>
+                  <showWarnings>true</showWarnings>
+                  <showDeprecation>true</showDeprecation>
+                  <source>${java.version}</source>
+                  <target>${java.version}</target>
+               </configuration>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-release-plugin</artifactId>
+               <version>2.5</version>
+            </plugin>
+            <plugin>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+         </plugins>
+      </pluginManagement>
+   </build>
+
+   <repositories>
+      <repository>
+         <id>nexus-aws</id>
+         <name>nexus-public</name>
+         <url>http://nexus.devops.inetwork.com/content/groups/public/</url>
+      </repository>
+   </repositories>
+</project>
