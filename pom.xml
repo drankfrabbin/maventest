@@ -2,7 +2,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.bandwidth.frank</groupId>
    <artifactId>frankparent</artifactId>
-   <version>0.1-SNAPSHOT</version>
+   <version>enya-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <modules>

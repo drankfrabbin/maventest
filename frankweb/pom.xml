@@ -3,7 +3,7 @@
    <parent>
       <groupId>com.bandwidth.frank</groupId>
       <artifactId>frankparent</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>enya-SNAPSHOT</version>
    </parent>
 
    <artifactId>frankweb</artifactId>
