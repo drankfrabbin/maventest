@@ -15,7 +15,7 @@
       <scm.repo.host>github.com</scm.repo.host>
       <scm.repo.account>drankfrabbin</scm.repo.account>
       <scm.repo.name>maventest</scm.repo.name>
-      <scm.connection>scm:git:git://git@${scm.repo.host}/${scm.repo.account}/${scm.repo.name}.git</scm.connection>
+      <scm.connection>scm:git:ssh://${scm.repo.host}/${scm.repo.account}/${scm.repo.name}.git</scm.connection>
       <spring-framework.version>4.0.3.RELEASE</spring-framework.version>
       <spring-boot.version>1.0.2.RELEASE</spring-boot.version>
    </properties>
