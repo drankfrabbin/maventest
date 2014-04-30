@@ -1,8 +1,7 @@
-package com.bandwidth.frank;
+package org.drankfrabbin.maventest;
 
+import org.drankfrabbin.maventest.configuration.ApplicationConfiguration;
 import org.springframework.boot.SpringApplication;
-
-import com.bandwidth.frank.configuration.ApplicationConfiguration;
 
 public class Application
 {
